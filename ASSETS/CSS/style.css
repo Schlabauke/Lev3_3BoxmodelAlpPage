@@ -1,0 +1,46 @@
+/* 
+Font: Cinzel, poppins.
+border: #ccc.
+color logo: #999.
+color home: #fff.
+color: #333
+font-family: 'Cinzel', serif; --> Logo & Überschriften
+font-family: 'Poppins', sans-serif; --> Text
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
+ /* General Style */
+ *{
+     margin:0;
+     padding:0;
+     box-sizing:border-box;
+     font-family: 'Poppins', sans-serif;
+     color: #333
+ }
+ h1,h2 {
+    font-family: 'Cinzel', serif;
+ }
+/* Header Style */
+header {
+        /* background-image: url("../IMG/mountainspanorama.jpeg"); */
+/* Wie bekomme ich die h1 in die Mitte des Bildes?
+back-img über css oder in img html?! */
+    
+ border:2px solid blue;
+}
+header div {
+    z-index: -1;
+    text-align: center;
+    background-size: cover;
+}
+header h2 {
+    color:#999;
+    padding-left: 50px;
+    margin-bottom: 100px;
+    border:2px solid green;
+}
+header h1 {
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border:2px solid pink;
+}
