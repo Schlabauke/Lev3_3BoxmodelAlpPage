@@ -7,6 +7,9 @@ color: #333
 font-family: 'Cinzel', serif; --> Logo & Überschriften
 font-family: 'Poppins', sans-serif; --> Text
  */
+ /* git remote add origin https://github.com/Schlabauke/Lev3_3BoxmodelAlpPage.git
+git branch -M main
+git push -u origin main */
  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;1,100&display=swap');
  /* General Style */
  *{
@@ -20,27 +23,97 @@ font-family: 'Poppins', sans-serif; --> Text
     font-family: 'Cinzel', serif;
  }
 /* Header Style */
-header {
-        /* background-image: url("../IMG/mountainspanorama.jpeg"); */
-/* Wie bekomme ich die h1 in die Mitte des Bildes?
-back-img über css oder in img html?! */
+header h1{
+   color:#999;
+   margin:0.8em 0 0.8em 4vw; 
+}
+
+/* Main Style */
+main section:first-of-type {
+    background-image: url("../IMG/mountainspanorama.jpeg");
+    width:100vw;
+    height:70vh;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+main section:first-of-type h2 {
+    color:#fff;
+    font-size: 4em;
+    width: 90%;
+    padding:25vh 0;
+    margin:0 auto;
+    text-align: center;
+}
+main section:nth-of-type(2) {
+    text-align:center;
+    margin:0 5% 1.5em 5em;
+    padding:10vh 0;
+    }
+main section:nth-of-type(2) h2{
+    font-size: 2em;
+    width: 90%;
+    padding:4.5vh 0;
+    margin:0 auto;
+}
+main section:nth-of-type(2) p{
+    padding:2em 0 8em 0;
+    line-height: 1.8em;
+    }
+main section:nth-of-type(2) article {
+    text-align:left;
+    display: inline;
+}
+main section:nth-of-type(2) article img {
+    width:30%;
+    padding:1.25%;
+}
+
+/* Tourdates Style */
+main article {
+    text-align:center;
+}
+main article h2 {
+    margin:0 0 1.5em;
+}
+
+main article ul li {
+    text-decoration: none;
+    padding:0.3em;
     
- border:2px solid blue;
 }
-header div {
-    z-index: -1;
+main article ul >li::after {
+    content:"- SOLD OUT";
+    color:red;
+    padding:0 0 0.5em 0.5em;
+}
+main article ul >li:nth-of-type(4):after {
+    content:"- ONLY 4 SPOTS LEFT";
+    color:orangered;
+    padding:0 0 0.5em 0.5em;
+}
+main article ul li:nth-last-child(-n+2)::after{
+    content:"AVAILABLE";
+    color:green;
+    padding:0 0 0.5em 0.5em;
+}
+
+/* Footer Style */
+footer {
+    border-top: 2px solid #ccc;
+    margin-top:5em;
     text-align: center;
-    background-size: cover;
 }
-header h2 {
-    color:#999;
-    padding-left: 50px;
-    margin-bottom: 100px;
-    border:2px solid green;
+footer a {
+    text-decoration: none;
+    color:#ccc;
+    font-size: 2em;
+    width: 90%;
+    padding:4.5vh 0;
+    margin:0 auto;
 }
-header h1 {
-    color: #fff;
-    text-align: center;
+footer ul li{
     display: inline-block;
-    border:2px solid pink;
+    padding:0.5em;
+    margin-top:1em;
 }
